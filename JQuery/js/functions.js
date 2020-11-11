@@ -1,33 +1,14 @@
-/*
-$(document).ready(function(){
-
-});
-
-$(window).on('load',function(){
-	alert("Olá, Mundo")
-})
-*/
-
 $(function(){
 
-	$('.artigo1').click(function(){
-		$('.artigo2').css('background-color','purple');
-	});
+	//Função append() para adicionar conteúdo/elementos no final do elemento que selecionamos
+	//$('.box div').eq(0).append('<h3>meu elemento add dinamicamente</h3>')
 
-	$('.artigo1').hover(function(){
-		$('.artigo2').css('background-color','red');
-	},function(){
-		$('.artigo2').css('background-color','rgb(100,100,100)');
-	});
+	//var el = $('<h3>Meu conteúdo</h3>').appendTo($('.box'));
 
-	$('textarea').focus(function(){
-		alert('Estou dentro do textarea');
-	});
+	//el.css('color','red');
 
-	/*
-	$('textarea').blur(function(){
-		alert('Estou fora do textarea');
-	});
-	*/
+	//$('.box')prepend('<h3>Olá, Mundo!</h3>');
+
+	//var el = $('<h3>Meu conteúdo</h3>').prependTo($('.box')).css('color','red');
 
 });
